@@ -48,6 +48,7 @@ class Trip {
     String startStation;
     String endStation;
     int totalTrips;
+    int totalTime;
     double avgTime;
 
     public Trip(String start, String end){
@@ -59,7 +60,8 @@ class Trip {
 
     public void updateAverage(int tripTime){
         totalTrips++;
-        avgTime = (avgTime + (double)tripTime)/(double)totalTrips;
+        totalTime += tripTime;
+        avgTime = (double)totalTime/(double)totalTrips;
     }
 
     @Override
