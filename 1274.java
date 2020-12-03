@@ -3,7 +3,9 @@
  * // You should not implement it, or speculate about its implementation
  */
  class Sea {
-     public boolean hasShips(int[] topRight, int[] bottomLeft);
+     public boolean hasShips(int[] topRight, int[] bottomLeft){
+         return false;
+     };
  }
 
 class ShipsRectangle {
